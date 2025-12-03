@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>SkyBoom Cracker Shop - README</title>
-</head>
 <body>
 
 <h1>SkyBoom Cracker Shop</h1>
