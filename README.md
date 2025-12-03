@@ -137,7 +137,7 @@ $conn = mysqli_connect($host, $user, $pass, $dbname);
     <li>admin_category</li>
   <img width="1366" height="768" alt="1 admin-category" src="https://github.com/user-attachments/assets/f37daae3-62ef-4242-8f6f-d10a49b114a0" />
 
-    <li>admin_product 1</li
+    <li>admin_product 1</li>
     <img width="1366" height="768" alt="2 admin-product 1" src="https://github.com/user-attachments/assets/302dc855-f157-4dcf-8f42-d7df8c9baf19" />
 
     <li>admin_product 2</li>
@@ -146,11 +146,11 @@ $conn = mysqli_connect($host, $user, $pass, $dbname);
     <li>admin_discount</li>
     <img width="1366" height="768" alt="4 admin-discount" src="https://github.com/user-attachments/assets/a7fbc0dc-248d-4f7d-a5f2-4cc7dddf1c6b" />
 
-  <li>admin order 1</li>
-  <img width="1366" height="768" alt="5 admin-orders" src="https://github.com/user-attachments/assets/b4ee5ceb-68ac-4eb4-b89b-acf15d82fb93" />
+    <li>admin order 1</li>
+    <img width="1366" height="768" alt="5 admin-orders" src="https://github.com/user-attachments/assets/b4ee5ceb-68ac-4eb4-b89b-acf15d82fb93" />
 
-  <li>user product 1</li>
-  <img width="1366" height="768" alt="6 user-product 1" src="https://github.com/user-attachments/assets/66d52310-1b99-4256-8f9d-7e286f4a5861" />
+    <li>user product 1</li>
+    <img width="1366" height="768" alt="6 user-product 1" src="https://github.com/user-attachments/assets/66d52310-1b99-4256-8f9d-7e286f4a5861" />
 
     <li>user product 2</li>
     <img width="1366" height="768" alt="7 user-product 2" src="https://github.com/user-attachments/assets/65c3cf4c-c75b-46a2-9974-1c5eb7cd8a42" />
@@ -173,8 +173,8 @@ $conn = mysqli_connect($host, $user, $pass, $dbname);
     <li>user my order 1</li>
     <img width="1366" height="768" alt="13 user-myorders 1" src="https://github.com/user-attachments/assets/2faf9f70-0e87-49bc-9cc6-67efb11d3249" />
 
-  <li>user my order 2</li>
-  <img width="1366" height="768" alt="14 user-myorders 2" src="https://github.com/user-attachments/assets/1fda4ce3-3819-4d11-b9cd-f5fa75512d56" />
+    <li>user my order 2</li>
+    <img width="1366" height="768" alt="14 user-myorders 2" src="https://github.com/user-attachments/assets/1fda4ce3-3819-4d11-b9cd-f5fa75512d56" />
 
     <li>user aboutus</li>
     <img width="1366" height="768" alt="15 user-aboutus" src="https://github.com/user-attachments/assets/a53fb838-f8de-4bfc-8208-8f2a7074a95c" />
