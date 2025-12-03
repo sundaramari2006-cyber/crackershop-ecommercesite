@@ -138,13 +138,15 @@ $conn = mysqli_connect($host, $user, $pass, $dbname);
   <img width="1366" height="768" alt="1 admin-category" src="https://github.com/user-attachments/assets/f37daae3-62ef-4242-8f6f-d10a49b114a0" />
 
     <li>admin_product 1</li>
-    <img width="1366" height="768" alt="2 admin-product 1" src="https://github.com/user-attachments/assets/302dc855-f157-4dcf-8f42-d7df8c9baf19" />
+    <img width="1366" height="768" alt="2 admin-product 1" src="https://github.com/user-attachments/assets/7fa96cbd-fd36-485c-8769-279fb1c3ad45" />
 
     <li>admin_product 2</li>
-    <img width="1366" height="768" alt="3 admin-product 2" src="https://github.com/user-attachments/assets/37b3681e-5137-4670-992d-be0d7971f182" />
+    <img width="1366" height="768" alt="3 admin-product 2" src="https://github.com/user-attachments/assets/22db7839-242b-4a0c-8f16-c1a37d185f47" />
+
 
     <li>admin_discount</li>
-    <img width="1366" height="768" alt="4 admin-discount" src="https://github.com/user-attachments/assets/a7fbc0dc-248d-4f7d-a5f2-4cc7dddf1c6b" />
+    <img width="1366" height="768" alt="4 admin-discount" src="https://github.com/user-attachments/assets/1196d569-0f71-4d4f-b72b-300842c5c296" />
+
 
     <li>admin order 1</li>
     <img width="1366" height="768" alt="5 admin-orders" src="https://github.com/user-attachments/assets/b4ee5ceb-68ac-4eb4-b89b-acf15d82fb93" />
