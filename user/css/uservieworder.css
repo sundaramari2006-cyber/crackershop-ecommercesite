@@ -1,0 +1,359 @@
+/* ---------------- GENERAL STYLES ---------------- */
+body {
+    margin: 0;
+    background: #111;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* ---------------- TOP HEADER ---------------- */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    /* space between title and nav */
+    align-items: center;
+    background: #222;
+    padding: 15px 30px;
+    color: #f7d94c;
+    flex-wrap: wrap;
+    /* makes it responsive */
+
+    /* Sticky header */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* stay on top of other elements */
+}
+
+/* Optional: add a subtle shadow when scrolling */
+.top-header.sticky-shadow {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Site title */
+.top-header .site-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffc107;
+}
+
+/* Right side container */
+.top-header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* space between nav and other items */
+    flex-wrap: wrap;
+}
+
+/* Navigation buttons */
+.main-nav {
+    display: flex;
+    gap: 15px;
+    /* even spacing between buttons */
+    flex-wrap: wrap;
+}
+
+.main-nav .nav-btn {
+    border: 2px solid #ffc107;
+    color: #ffc107;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.main-nav .nav-btn:hover,
+.main-nav .nav-btn.active {
+    background: #e0c13f;
+    color: #000;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .top-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .top-header-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+
+/* ---------------- ORDER CONTAINER (SEARCH FORM) ---------------- */
+.order-container {
+    width: 480px;
+    max-width: 95%;
+    margin: 40px auto;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.order-container input,
+.order-container textarea,
+.order-container select {
+    width: 95%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    background: #222;
+    color: #fff;
+    font-size: 16px;
+}
+
+.order-container input::placeholder {
+    color: #aaa;
+}
+
+/* ---------------- BUTTONS ---------------- */
+.order-btn,
+.edit-btn,
+.delete-btn,
+.update-btn,
+.cancel-btn,
+.view-prod-btn {
+    padding: 10px 18px;
+    margin-top: 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Button colors */
+ .view-prod-btn {
+    background: #ffd900;
+    color: #0a0202;
+}
+
+.view-prod-btn:hover {
+    background: #fffb00;
+}
+.order-btn {
+    background: #f7d94c;
+    color: #000;
+}
+
+.order-btn:hover {
+    background: #e0c13f;
+}
+
+.edit-btn {
+    background: #3498db;
+    color: #fff;
+}
+
+.edit-btn:hover {
+    background: #2980b9;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: #fff;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+.update-btn {
+    background: #2ecc71;
+    color: #fff;
+}
+
+.update-btn:hover {
+    background: #27ae60;
+}
+
+.cancel-btn {
+    background: #7f8c8d;
+    color: #fff;
+}
+
+.cancel-btn:hover {
+    background: #606f7b;
+}
+
+
+/* ---------------- MESSAGES ---------------- */
+.msg {
+    background: #2ecc71;
+    padding: 12px;
+    color: #000;
+    text-align: center;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+.error {
+    background: #e74c3c;
+    padding: 12px;
+    text-align: center;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+/* ---------------- ORDER BOX ---------------- */
+.order-box {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Table styling */
+.order-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.order-box th,
+.order-box td {
+    border: 1px solid #444;
+    padding: 10px 12px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.order-box th {
+    background: #333;
+    color: #f7d94c;
+    text-align: center;
+}
+
+.order-box td {
+    background: #222;
+}
+
+/* Alternate row color */
+.order-box table tr:nth-child(even) td {
+    background: #1f1f1f;
+}
+
+/* ---------------- ACTION BUTTONS UNDER TABLE ---------------- */
+.order-box .action-button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media screen and (max-width: 600px) {
+
+    .order-container,
+    .order-box {
+        width: 95%;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* ---------------- EDIT / UPDATE FORM ---------------- */
+.order-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.order-box form label {
+    color: #f7d94c;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.order-box form input,
+.order-box form textarea,
+.order-box form select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #f7d94c;
+    border-radius: 6px;
+    background: #222;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.order-box form input::placeholder,
+.order-box form textarea::placeholder {
+    color: #aaa;
+}
+
+.order-box form input:focus,
+.order-box form textarea:focus,
+.order-box form select:focus {
+    outline: none;
+    border-color: #ffd700;
+    box-shadow: 0 0 5px #ffd700;
+}
+
+/* Buttons inside form */
+.order-box form .update-btn {
+    background: #f7d94c;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+.order-box form .update-btn:hover {
+    background: #e0c13f;
+}
+
+.order-box form .cancel-btn {
+    background: #7f8c8d;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.order-box form .cancel-btn:hover {
+    background: #606f7b;
+}
+
+/* Responsive for small screens */
+@media screen and (max-width: 600px) {
+    .order-box form {
+        padding: 15px;
+    }
+}

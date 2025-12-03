@@ -1,0 +1,165 @@
+/* =========================================
+   🖤 Main Container (Outer Layout)
+   ========================================= */
+        .sb-home-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: transparent;
+            /* Remove white background */
+            color: #fff;
+        }
+
+        /* =========================================
+   🖤 Input Form Box
+   ========================================= */
+        .sb-form-box {
+            background: #0d0d0d;
+            /* Black box like navbar */
+            border: 2px solid #e6b800;
+            /* Reduced yellow */
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 0 18px rgba(230, 184, 0, 0.15);
+            margin-bottom: 35px;
+            /* Space before table */
+        }
+
+        .sb-form-box form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Heading */
+        .sb-home-title {
+            color: #e6b800;
+            border-bottom: 2px solid #e6b800;
+            display: inline-block;
+            margin-bottom: 18px;
+            font-size: 22px;
+        }
+
+        /* Input */
+        .sb-input {
+            width: 100%;
+            max-width: 380px;
+            padding: 12px 16px;
+            border-radius: 6px;
+            text-align: center;
+            background: #1a1a1a;
+            border: 2px solid #444;
+            color: #fff;
+            font-size: 1em;
+            transition: 0.3s;
+        }
+
+        .sb-input::placeholder {
+            color: #a8a8a8;
+        }
+
+        .sb-input:focus {
+            border-color: #e6b800;
+            box-shadow: 0 0 10px rgba(230, 184, 0, 0.6);
+            outline: none;
+        }
+
+        /* Button */
+        .sb-btn {
+            padding: 12px 30px;
+            margin-left: 10px;
+            background: #e6b800;
+            /* Matched navbar yellow */
+            color: #000;
+            font-weight: bold;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .sb-btn:hover {
+            background: #cfa300;
+            box-shadow: 0 0 10px rgba(230, 184, 0, 0.7);
+        }
+
+        /* =========================================
+   🖤 Table Box Below Form
+   ========================================= */
+        .sb-table-box {
+            background: #0d0d0d;
+            border: 2px solid #e6b800;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 18px rgba(230, 184, 0, 0.15);
+        }
+
+        /* Table */
+        .sb-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .sb-table th {
+            background: #e6b800;
+            color: #000;
+            padding: 12px 14px;
+            text-align: center;
+        }
+
+        .sb-table td {
+            padding: 12px 14px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+            color: #fff;
+        }
+
+        .sb-table tr:hover {
+            background: #1c1c1c;
+        }
+
+        /* Buttons in table */
+        .sb-action-buttons {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+        }
+
+        /* EDIT BUTTON - Yellow Theme */
+        .sb-edit {
+            background: #e6b800;
+            /* Theme Yellow */
+            color: #000;
+            /* Black text */
+            padding: 6px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s ease;
+        }
+
+        .sb-edit:hover {
+            background: #ffcc00;
+            /* Slightly brighter yellow */
+        }
+
+
+        /* DELETE BUTTON - Dark Red Theme */
+        .sb-delete {
+            background: #b30000;
+            /* Dark Matte Red */
+            color: #fff;
+            /* White text */
+            padding: 6px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s ease;
+        }
+
+        .sb-delete:hover {
+            background: #e60000;
+            /* Bright red on hover */
+        }

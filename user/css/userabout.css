@@ -1,0 +1,184 @@
+/* ---------------- GENERAL ---------------- */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #111;
+            color: #fff;
+        }
+
+        /* ---------------- TOP HEADER ---------------- */
+        .top-header {
+            display: flex;
+            justify-content: space-between;
+            /* space between title and nav */
+            align-items: center;
+            background: #222;
+            padding: 15px 30px;
+            color: #f7d94c;
+            flex-wrap: wrap;
+            /* makes it responsive */
+
+            /* Sticky header */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            /* stay on top of other elements */
+        }
+
+        /* Optional: add a subtle shadow when scrolling */
+        .top-header.sticky-shadow {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+
+        /* Site title */
+        .top-header .site-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffc107;
+        }
+
+        /* Right side container */
+        .top-header-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            /* space between nav and other items */
+            flex-wrap: wrap;
+        }
+
+        /* Navigation buttons */
+        .main-nav {
+            display: flex;
+            gap: 15px;
+            /* even spacing between buttons */
+            flex-wrap: wrap;
+        }
+
+        .main-nav .nav-btn {
+            border: 2px solid #ffc107;
+            color: #ffc107;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.3s;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .main-nav .nav-btn:hover,
+        .main-nav .nav-btn.active {
+            background: #e0c13f;
+            color: #000;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .top-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .top-header-right {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .main-nav {
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+
+        /* ---------------- MAIN CONTENT ---------------- */
+        .about-container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-container img {
+            height: 150px;
+            max-width: 200px;
+            display: block;
+            margin: 15px auto;
+        }
+
+        .about-section {
+            margin-bottom: 30px;
+        }
+
+        .about-section h2 {
+            color: #f7d94c;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .about-section p {
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .cracker-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .cracker-item {
+            background: #222;
+            padding: 15px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .cracker-item img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        /* ======================== FOOTER ======================== */
+        .site-footer {
+            background: #000;
+            padding: 40px 20px;
+            margin-top: 40px;
+            border-top: 2px solid #ffcc33;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-about h3,
+        .footer-contact h3 {
+            color: #ffcc33;
+        }
+
+        .footer-about,
+        .footer-contact {
+            width: 45%;
+            min-width: 250px;
+        }
+
+        .footer-logo {
+            width: 120px;
+            margin-top: 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 15px;
+            background: #0d0d0d;
+            border-top: 1px solid #ffcc33;
+            color: #fff;
+        }

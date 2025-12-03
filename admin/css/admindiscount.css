@@ -1,0 +1,163 @@
+ /* MAIN CONTAINER */
+ .sb-discount-container {
+     width: 420px;
+     margin: 30px auto;
+     padding: 25px;
+     border-radius: 15px;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+     border: 2px solid #f1c40f;
+     /* Optional: slightly darker yellow border */
+ }
+
+ /* TITLES */
+ .sb-discount-title {
+     text-align: center;
+     font-size: 22px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     color: #f1c40f;
+     /* Change text color to black for contrast */
+ }
+
+ /* FORM */
+ .sb-discount-form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 12px;
+ }
+
+ /* INPUT BOX */
+ .sb-input-discount {
+     width: 70%;
+     padding: 10px;
+     border-radius: 8px;
+     border: 1px solid #333;
+     background: #111;
+     color: #fff;
+     font-size: 16px;
+ }
+
+ .sb-input-discount:focus {
+     border-color: #000;
+     outline: none;
+ }
+
+ /* BUTTONS */
+ .sb-btn {
+     width: 60%;
+     padding: 10px;
+     text-align: center;
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;
+     font-size: 16px;
+     font-weight: bold;
+ }
+
+ /* ADD BUTTON */
+ .sb-btn-add {
+     background: #f1c40f;
+     color: #000;
+ }
+
+ .sb-btn-add:hover {
+     background: #333;
+ }
+
+ /* DISABLED BUTTON */
+ .sb-disabled {
+     background: #444 !important;
+     color: #777 !important;
+     cursor: not-allowed !important;
+ }
+
+ /* UPDATE BUTTON */
+ .sb-btn-update {
+     background: #3498db;
+     color: #fff;
+ }
+
+ .sb-btn-update:hover {
+     background: #2874a6;
+ }
+
+ /* TABLE */
+ .sb-table-discount {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 25px;
+     background: #fff7d1;
+     /* Light yellow table background */
+     border-radius: 10px;
+     overflow: hidden;
+ }
+
+ /* TABLE HEADER */
+ .sb-table-discount th {
+     background: #f1c40f;
+     padding: 12px;
+     color: #000;
+     text-align: center;
+ }
+
+ /* TABLE CELLS */
+ .sb-table-discount td {
+     padding: 12px;
+     color: #f1c40f;
+     background: #000;
+     text-align: center;
+ }
+
+ /* EMPTY MESSAGE */
+ .sb-empty {
+     padding: 15px;
+     color: #555;
+     font-style: italic;
+ }
+
+ /* ACTION BUTTONS */
+ .sb-link {
+     padding: 6px 12px;
+     color: #fff;
+     border-radius: 6px;
+     text-decoration: none;
+     font-size: 14px;
+ }
+
+ /* EDIT BUTTON - Yellow Theme */
+ .sb-edit {
+     background: #e6b800;
+     /* Theme Yellow */
+     color: #000;
+     /* Black text */
+     padding: 6px 16px;
+     border-radius: 6px;
+     text-decoration: none;
+     font-weight: 600;
+     transition: 0.2s ease;
+ }
+
+ .sb-edit:hover {
+     background: #ffcc00;
+     /* Slightly brighter yellow */
+ }
+
+
+ /* DELETE BUTTON - Dark Red Theme */
+ .sb-delete {
+     background: #b30000;
+     /* Dark Matte Red */
+     color: #fff;
+     /* White text */
+     padding: 6px 16px;
+     border-radius: 6px;
+     text-decoration: none;
+     font-weight: 600;
+     transition: 0.2s ease;
+ }
+
+ .sb-delete:hover {
+     background: #e60000;
+     /* Bright red on hover */
+ }

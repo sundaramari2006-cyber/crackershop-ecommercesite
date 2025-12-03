@@ -1,0 +1,167 @@
+/* ======================== GLOBAL STYLE ======================== */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+        }
+
+        /* ======================== NAVBAR ======================== */
+        /* ---------------- TOP HEADER ---------------- */
+        .top-header {
+            display: flex;
+            justify-content: space-between;
+            /* space between title and nav */
+            align-items: center;
+            background: #222;
+            padding: 15px 30px;
+            color: #f7d94c;
+            flex-wrap: wrap;
+            /* makes it responsive */
+
+            /* Sticky header */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            /* stay on top of other elements */
+        }
+
+        /* Optional: add a subtle shadow when scrolling */
+        .top-header.sticky-shadow {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+
+        /* Site title */
+        .top-header .site-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffc107;
+        }
+
+        /* Right side container */
+        .top-header-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            /* space between nav and other items */
+            flex-wrap: wrap;
+        }
+
+        /* Navigation buttons */
+        .main-nav {
+            display: flex;
+            gap: 15px;
+            /* even spacing between buttons */
+            flex-wrap: wrap;
+        }
+
+        .main-nav .nav-btn {
+            border: 2px solid #ffc107;
+            color: #ffc107;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.3s;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .main-nav .nav-btn:hover,
+        .main-nav .nav-btn.active {
+            background: #e0c13f;
+            color: #000;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .top-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .top-header-right {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .main-nav {
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+
+
+        /* ======================== PAGE TITLE ======================== */
+        .page-title {
+            text-align: center;
+            font-size: 35px;
+            color: #ffcc33;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        /* ======================== SAFETY TIPS BOX ======================== */
+        .tips-container {
+            width: 90%;
+            max-width: 900px;
+            margin: 20px auto;
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid #ffcc33;
+        }
+
+        .tips-container h2 {
+            color: #ffcc33;
+            margin-bottom: 15px;
+        }
+
+        .tips-container ul {
+            padding-left: 20px;
+        }
+
+        .tips-container ul li {
+            font-size: 18px;
+            margin: 12px 0;
+            line-height: 1.5;
+        }
+
+        /* ======================== FOOTER ======================== */
+        .site-footer {
+            background: #000;
+            padding: 40px 20px;
+            margin-top: 40px;
+            border-top: 2px solid #ffcc33;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-about h3,
+        .footer-contact h3 {
+            color: #ffcc33;
+        }
+
+        .footer-about,
+        .footer-contact {
+            width: 45%;
+            min-width: 250px;
+        }
+
+        .footer-logo {
+            width: 120px;
+            margin-top: 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 15px;
+            background: #0d0d0d;
+            border-top: 1px solid #ffcc33;
+            color: #fff;
+        }

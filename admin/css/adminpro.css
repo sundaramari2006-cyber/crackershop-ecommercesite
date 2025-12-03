@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0b0b0b;
+    color: #f2f2f2;
+}
+
+/* PAGE TITLE */
+.sb-product-title {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #e6b800;
+}
+
+/* FORM OUTER BOX */
+.sb-product-form {
+    width: 650px;
+    margin: 0 auto;
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #e6b800;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.04);
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/* INPUT + SELECT + FILE */
+.sb-input,
+.sb-select,
+.sb-file {
+    width: 65%;
+    padding: 10px;
+    background: #111;
+    border: 1px solid #e6b800;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.sb-input:focus,
+.sb-select:focus,
+.sb-file:focus {
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0 0 5px rgba(230, 184, 0, 0.6);
+}
+ 
+
+/* IMAGE PREVIEW */
+.sb-thumb {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #e6b800;
+}
+
+/* ADD BUTTON */
+.sb-btn {
+    width: 60%;
+    padding: 10px;
+    background: #e6b800;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.sb-btn:hover {
+    background: #ffcc00;
+}
+
+/* ============================
+   TABLE STYLING
+=============================== */
+
+.sb-table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #e6b800;
+}
+
+.sb-table th {
+    background: #e6b800;
+    color: #000;
+    padding: 12px;
+    font-weight: 700;
+}
+
+.sb-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    color: white;
+}
+
+/* PRODUCT IMAGE IN TABLE */
+.sb-prod-img {
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid #e6b800;
+}
+
+/* ============================
+   ACTION BUTTONS
+=============================== */
+
+.sb-link {
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.sb-edit {
+    background: #e6b800;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.sb-edit:hover {
+    background: #ffcc00;
+}
+
+.sb-delete {
+    background: #b30000;
+    color: #fff;
+    border: 1px solid #660000;
+}
+
+.sb-delete:hover {
+    background: #e60000;
+}
+

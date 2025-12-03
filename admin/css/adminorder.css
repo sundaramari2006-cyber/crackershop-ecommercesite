@@ -1,0 +1,206 @@
+/* MAIN ORDERS CONTAINER */
+        /* MAIN ORDERS CONTAINER */
+        .sb-order-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+            background: #1a1a1a;
+            /* Dark background */
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid #f1c40f;
+            /* Bright yellow border for emphasis */
+            box-shadow: 0 0 20px rgba(241, 196, 15, 0.3);
+        }
+
+        /* MAIN PAGE TITLE */
+        .sb-order-main-title {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #f1c40f;
+            /* Yellow for title */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        /* EACH ORDER BOX */
+        .sb-order-box {
+            background: #111;
+            /* Slightly lighter dark */
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 35px;
+            box-shadow: 0 0 15px rgba(241, 196, 15, 0.2);
+            color: #fff;
+            border-left: 4px solid #f1c40f;
+            /* Accent border on left */
+            transition: 0.3s;
+        }
+
+        .sb-order-box:hover {
+            box-shadow: 0 0 25px rgba(241, 196, 15, 0.5);
+        }
+
+        /* ORDER ID */
+        .sb-order-id {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #f1c40f;
+        }
+
+        /* ACTIONS ROW */
+        .sb-order-actions {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        /* BUTTONS / LINKS */
+        .sb-link,
+        .sb-btn {
+            padding: 8px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-block;
+            transition: 0.3s ease;
+        }
+
+        /* DELIVER BUTTON */
+        .sb-deliver {
+            background: transparent;
+            border: 2px solid #3498db;
+            /* Blue border */
+            color: #3498db;
+        }
+
+        .sb-deliver:hover {
+            background: #3498db;
+            color: #fff;
+        }
+
+        /* DELETE BUTTON */
+        .sb-delete {
+            background: transparent;
+            border: 2px solid #e74c3c;
+            /* Red border */
+            color: #e74c3c;
+        }
+
+        .sb-delete:hover {
+            background: #e74c3c;
+            color: #fff;
+        }
+
+        /* DELIVERED BUTTON (DISABLED) */
+        .sb-delivered {
+            background: #27ae60;
+            /* Green for delivered */
+            color: #fff;
+            cursor: not-allowed;
+        }
+
+        /* CUSTOMER DETAILS */
+        .sb-customer,
+        .sb-phone,
+        .sb-address,
+        .sb-total {
+            font-size: 15px;
+            margin: 4px 0;
+            color: #ddd;
+        }
+
+        /* PRODUCTS TITLE */
+        .sb-section-title {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #f1c40f;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+
+        /* TABLE */
+        .sb-table-order {
+            width: 100%;
+            border-collapse: collapse;
+            background: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        /* TABLE HEADERS */
+        .sb-table-order th {
+            background: #222;
+            color: #f1c40f;
+            padding: 12px;
+            text-align: center;
+            border-bottom: 2px solid #f1c40f;
+        }
+
+        /* TABLE ROWS */
+        .sb-table-order td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+            color: #fff;
+        }
+
+        /* PRODUCT IMAGE INSIDE TABLE */
+        .sb-product-img {
+            width: 55px;
+            height: 55px;
+            border-radius: 6px;
+            object-fit: cover;
+        }
+
+        .zoom-img {
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .zoom-img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Modal Background */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        /* Big Image */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 50%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        /* Close Button */
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #ff0;
+        }

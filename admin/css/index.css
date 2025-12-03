@@ -1,0 +1,83 @@
+  /* ============================
+   SKYBOOM ADMIN LOGIN PAGE
+   Dark + #e6b800 Yellow Theme
+=============================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #0b0b0b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* LOGIN BOX */
+        .login-box {
+            width: 380px;
+            padding: 28px;
+            background: #111;
+            border-radius: 12px;
+
+            /* MAIN YELLOW THEME */
+            border: 1px solid #e6b800;
+            box-shadow: 0 0 12px rgba(230, 184, 0, 0.35);
+
+            text-align: center;
+        }
+
+        .login-box h2 {
+            color: #e6b800;
+            margin-bottom: 18px;
+            font-size: 26px;
+        }
+
+        /* INPUT BOXES */
+        .login-box input {
+            width: 90%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #e6b800;
+
+            background: #0f0f0f;
+            color: #fff;
+
+            margin: 10px 0;
+            font-size: 15px;
+        }
+
+        /* BUTTON */
+        .login-box button {
+            width: 90%;
+            padding: 12px;
+
+            /* BUTTON YELLOW */
+            background: #e6b800;
+            color: #000;
+
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login-box button:hover {
+            background: #ffcc00;
+            /* Slightly brighter hover */
+        }
+
+        /* ERROR MESSAGE */
+        .error {
+            color: #ff6666;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 500;
+        }

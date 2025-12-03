@@ -1,0 +1,58 @@
+/* ============================
+   Dark + Yellow Theme (#e6b800)
+   DISCOUNT PAGE STYLING
+=============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0b0b0b;
+    color: #f2f2f2;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to right, #000, #141414);
+    padding: 20px;
+    text-align: center;
+
+    /* Header bottom border = main yellow */
+    border-bottom: 2px solid #f1c40f;
+}
+
+header h1 {
+    color: #f1c40f;
+    font-size: 30px;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background: #121212;
+    padding: 20px 0;
+
+    /* Nav bottom border */
+    border-bottom: 2px solid #f1c40f;
+}
+
+nav a {
+    color: #f1c40f;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+/* Hover + Active */
+nav a:hover,
+nav .active {
+    background: #f1c40f;
+    color: #000;
+    font-weight: 700;
+}
